@@ -1,0 +1,139 @@
+.top { height:2.5em;line-height: 2.5em;position:fixed;width: 87%;background-color: #2A2A36;top:0;left:0;box-shadow: 0 1px 5px #C0C0C0;margin-left: 13%;float: right;color:white;}
+/*.menu {float: left;height:2.5em;line-height: 2.5em;margin-left:2%;}*/
+.logout {  float: right;  margin-right: 1%;}
+.content {margin-top: 4%;margin-left: 15%;}
+.footer {height:2em;line-height: 2em;position:fixed;width: 100%;background-color: #2A2A37;bottom:0;left:0;box-shadow: 0 1px 5px #C0C0C0;text-align:center; color:white;}
+.page {width: 100%;border-top: 1px solid #e1e2e3;}
+.pagination{ margin-top: 10px;float:right;}
+.page a{font-size: 15px;}
+.page li span {font-size: 18px;}
+img {  width: 10em; }
+/**button状态*/
+.recommend {   border:1px solid red;padding: 1px 2px;background-color: red;color:white;}
+.ignore {  border:1px solid lime;padding: 1px 2px;background-color: lime;color:white; }
+.look {border:1px solid #31b0d5;padding: 1px 2px;background-color: #31b0d5;color:white;}
+.market {border:1px solid #9932CC;padding: 1px 2px;background-color: #9932CC;color:white;}
+.del {border:1px solid red;padding: 1px 2px;background-color: red;color:white;}
+.success {border:1px solid lime;padding: 1px 2px;background-color: lime;color:white;}
+.trans {border:1px solid yellow;padding: 1px 2px;background-color: yellow;color:white;}
+/**内容状态*/
+.proposal {color:yellow;}
+.contract {color:#9932CC;}
+.building {color:powderblue;}
+.submission {color:cornflowerblue;}
+.pass {color:red;}
+.failed {color:lime}
+.closed {color:black;}
+.menu a {margin-right:20px;}
+a {  text-decoration: none;  cursor: pointer; color:cornflowerblue;}
+table {  text-align: center;  }
+th{  width: 125px;  }
+li{   list-style-type:none;padding: 1px 10px;line-height: 30px;float: left;}
+.group {margin-top:1em;}
+.group-error {color:red;}
+.group .label{width: 10%;float: left;text-align: right;margin-right: 1%;}
+.status-yes {color:lime;}
+.status-no {color:red;}
+.head {border-bottom: 1px solid #e1e2e3;padding-bottom: 1%;}
+.head a {float:right;font-size: 15px;border:1px solid #e1e2e3;padding: 5px 5px;border-radius: 4px;margin-top: -30px;}
+.detail {margin-left: 5%;margin-top: 1.5%;}
+small {font-size: 12px;color: #C0C0C0;}
+.create .text{height:30px;border-radius: 4px;border:1px solid #888888;padding-left: 5px;width: 50%;}
+.create .radio {margin-left: 10px;margin-right: 5px;}
+.create textarea{border-radius: 4px;width: 50%;height:25%;border:1px solid #888888;}
+.create button {font-size: 17px;border: 1px solid #e1e2e3;background-color: transparent;border-radius: 4px;margin-left: 10%;}
+.tag { padding: 2px 2px;}
+tr {height:30px;}
+td a {font-size: 14px;}
+.left{float: left;}
+.right{float: left;}
+.introduction {float: left;}
+.introduction-content {border-radius: 4px;width: 85%;height:10%;border:1px solid #888888;margin-left: 2%;}
+.submit {font-size: 17px;border: 1px solid #e1e2e3;background-color: transparent;border-radius: 4px;margin-left: 93%;margin-top: -5%;}
+
+
+/**category**/
+.category-click {cursor:pointer;float: right;margin:0 20px 0 0;border: 2px solid whitesmoke;padding: 2px 5px;background-color: red;color:white;}
+.category-create {background-color: white;display: none;width: 300px;height:250px;text-align: center;margin: -30% 0 0 30%;padding: 20px 20px;position: absolute;box-shadow:0 1px 5px #C0C0C0;}
+.category-create .text{height:30px;border-radius: 4px;border:1px solid #888888;padding-left: 5px;width: 100%;}
+.category-create button {font-size: 17px;border: 1px solid #e1e2e3;background-color: transparent;border-radius: 4px;margin-top:1em;}
+.category-create .category-close {cursor: pointer;}
+/**审核**/
+.work-click {cursor:pointer;float: right;margin:0 20px 0 0;border: 2px solid whitesmoke;padding: 2px 5px;background-color: red;color:white;}
+.work-trans-click {cursor:pointer;padding: 2px 5px;background-color: yellow;color:white;}
+.work-trans {background-color: white;display: none;width: 350px;height:150px;text-align: center;margin: -30% 0 0 30%;padding: 20px 20px;position: absolute;box-shadow:0 1px 5px #C0C0C0;}
+.work-trans .trans-close {cursor: pointer;}
+.work-recommend .recommend-close {cursor: pointer;}
+.work-trans .text{height:30px;border-radius: 4px;border:1px solid #888888;padding-left: 5px;width: 100%;}
+.work-trans button {font-size: 17px;border: 1px solid #e1e2e3;background-color: transparent;border-radius: 4px;margin-top:1em;}
+.work-recommend {background-color: white;display: none;width: 300px;height:250px;text-align: center;margin: -30% 0 0 30%;padding: 20px 20px;position: absolute;box-shadow:0 1px 5px #C0C0C0;}
+.work-recommend .text{height:30px;border-radius: 4px;border:1px solid #888888;padding-left: 5px;width: 100%;}
+.work-recommend button {font-size: 17px;border: 1px solid #e1e2e3;background-color: transparent;border-radius: 4px;margin-top:1em;}
+.work-auth-click {cursor:pointer;padding: 2px 5px;background-color: red;color:white;}
+.work-auth {background-color: white;display: none;width: 400px;min-height:150px;text-align: center;margin: -30% 0 0 30%;padding: 20px 20px;position: absolute;box-shadow:0 1px 5px #C0C0C0;}
+.work-auth .auth-close {cursor: pointer;}
+.work-auth .text{height:30px;border-radius: 4px;border:1px solid #888888;padding-left: 5px;width: 100%;}
+.work-auth button {font-size: 17px;border: 1px solid #e1e2e3;background-color: transparent;border-radius: 4px;margin-top:1em;}
+/**用户**/
+.user th{width: 2%;}
+.user .search input {;cursor: pointer;margin-top: 10px;}
+.user-click {cursor:pointer;float: right;margin:0 20px 0 0;border: 2px solid whitesmoke;padding: 2px 5px;background-color: red;color:white;}
+.user-recommend {background-color: white;display: none;width: 300px;height:300px;text-align: center;margin: -30% 0 0 30%;padding: 20px 20px;position: absolute;box-shadow:0 1px 5px #C0C0C0;}
+.user-recommend .text{height:30px;border-radius: 4px;border:1px solid #888888;padding-left: 5px;width: 100%;}
+.user-recommend textarea{border-radius: 4px;width: 100%;height:35%;border:1px solid #888888;}
+.user-recommend button {font-size: 17px;border: 1px solid #e1e2e3;background-color: transparent;border-radius: 4px;margin-top:1em;}
+/**通知消息**/
+.head a {margin-right: 30px;}
+.notify-box ul {float: left;background-color: #C0C0C0;width: 100px;min-height: 400px;padding: 0 0;}
+.notify-box ul li{font-size: 13px;float: left; border:none;text-align: center;width: 100%;padding: 0 0;cursor: pointer;}
+.notify-box ul li:first-child {margin-top: 20px;}
+.notify-content{float:left;margin-left:10px;min-height: 400px;background-color: #C0C0C0;font-size: 13px;margin-top:16px;width: 900px;}
+.notify-content textarea{min-height: 400px;background-color: #C0C0C0;font-size: 13px;width: 900px;padding: 20px 20px;border:1px solid #C0C0C0;}
+.notify-create .text {width: 200px;display: none;height:25px;}
+.notify-create .user-search {background-color: white;box-shadow: 1px 1px 5px #C0C0C0;width: 200px;height: 250px;overflow-x: auto;margin-left: 267px;margin-top: -256px;z-index: 1;position: absolute;display: none;}
+.notify-create .user-search ul{padding-left: 0;margin-top: 0;}
+.notify-create .user-search li{width: 200px;padding: 0;font-size: 15px;text-align: center;}
+.error {width: 250px;height:40px;position: absolute;z-index: 11;color:red;text-align: center;line-height: 40px;margin-left: 350px;margin-top: 150px;background-color: whitesmoke;display: none;}
+.notify {height:100%;}
+.notify-click {cursor:pointer;float: right;margin:-3px 20px 0 0;border: 1px solid #e1e2e3;padding: 5px 5px;color:#0088cc;border-radius: 4px;font-size: 15px;   }
+.notify-template {background-color: white;display: none;width: 300px;height:300px;text-align: center;margin: -40% 0 0 30%;padding: 20px 20px;position: absolute;box-shadow:0 1px 5px #C0C0C0;}
+.notify-template .text{height:30px;border-radius: 4px;border:1px solid #888888;padding-left: 5px;width: 100%;}
+.notify-template textarea{border-radius: 4px;width: 100%;height:35%;border:1px solid #888888;}
+.notify-template button {font-size: 17px;border: 1px solid #e1e2e3;background-color: transparent;border-radius: 4px;margin-top:1em;}
+/**邮件**/
+.mail-box ul {float: left;background-color: #C0C0C0;width: 100px;min-height: 400px;padding: 0 0;}
+.mail-box ul li{font-size: 13px;float: left; border:none;text-align: center;width: 100%;padding: 0 0;cursor: pointer;}
+.mail-box ul li:first-child {margin-top: 20px;}
+.mail-content{float:left;margin-left:10px;min-height: 400px;background-color: #C0C0C0;font-size: 13px;margin-top:16px;width: 900px;}
+.mail-content textarea{min-height: 400px;background-color: #C0C0C0;font-size: 13px;width: 900px;padding: 20px 20px;border:1px solid #C0C0C0;}
+.mail-create .text {width: 200px;display: none;height:25px;}
+.mail-create .user-search {background-color: white;box-shadow: 1px 1px 5px #C0C0C0;width: 200px;height: 250px;overflow-x: auto;margin-left: 267px;margin-top: -256px;z-index: 1;position: absolute;display: none;}
+.mail-create .user-search ul{padding-left: 0;margin-top: 0;}
+.mail-create .user-search li{width: 200px;padding: 0;font-size: 15px;text-align: center;}
+.mail {height:100%;}
+.mail-click {cursor:pointer;float: right;margin:-3px 20px 0 0;border: 1px solid #e1e2e3;padding: 5px 5px;color:#0088cc;border-radius: 4px;font-size: 15px;}
+.mail-template {background-color: white;display: none;width: 300px;height:300px;text-align: center;margin: -40% 0 0 30%;padding: 20px 20px;position: absolute;box-shadow:0 1px 5px #C0C0C0;}
+.mail-template .text{height:30px;border-radius: 4px;border:1px solid #888888;padding-left: 5px;width: 100%;}
+.mail-template textarea{border-radius: 4px;width: 100%;height:35%;border:1px solid #888888;}
+.mail-template button {font-size: 17px;border: 1px solid #e1e2e3;background-color: transparent;border-radius: 4px;margin-top:1em;}
+/**提现*/
+.cash .text{height:30px;border-radius: 4px;border:1px solid #e1e2e3;padding-left: 5px;}
+.cash .search {margin-top: 10px;}
+.cash button {border: 1px solid #e1e2e3;padding: 4px 5px;color:#0088cc;border-radius: 4px;font-size: 15px; background-color:#e1e2e3;}
+.cash .text::-webkit-input-placeholder{ font-size: 14px;}
+/**举报*/
+.reason-click {cursor:pointer;float: right;margin:0 20px 0 0;border: 2px solid whitesmoke;padding: 2px 5px;background-color: red;color:white;}
+.reason-template {background-color: white;display: none;width: 300px;min-height:300px;text-align: center;margin: 0 0 0 30%;padding: 20px 20px;position: absolute;box-shadow:0 1px 5px #C0C0C0;}
+.reason-template .text{height:30px;border-radius: 4px;border:1px solid #888888;padding-left: 5px;width: 100%;}
+.reason-template textarea{border-radius: 4px;width: 100%;height:35%;border:1px solid #888888;}
+.reason-template button {font-size: 17px;border: 1px solid #e1e2e3;background-color: transparent;border-radius: 4px;margin-top:1em;}
+.cash .text::-webkit-input-placeholder{ font-size: 14px;}
+/**认证*/
+.auth-click {cursor:pointer;float: right;margin:0 20px 0 0;border: 2px solid whitesmoke;padding: 2px 5px;background-color: red;color:white;}
+.auth-template {background-color: white;display: none;width: 300px;height:300px;text-align: center;margin: 0 0 0 30%;padding: 20px 20px;position: absolute;box-shadow:0 1px 5px #C0C0C0;}
+.auth-template .text{height:30px;border-radius: 4px;border:1px solid #888888;padding-left: 5px;width: 100%;}
+.auth-template textarea{border-radius: 4px;width: 100%;height:35%;border:1px solid #888888;}
+.auth-template button {font-size: 17px;border: 1px solid #e1e2e3;background-color: transparent;border-radius: 4px;margin-top:1em;}
+/**项目*/
+.project-detail {margin-top: 1.5%;}
+.project-detail th{height:50px;width: 100px;}

@@ -1,0 +1,8 @@
+.env
+.idea/*
+.DS_Store
+storage/logs/*
+storage/framework/*
+Paypal.log
+vendor
+config/mail.php

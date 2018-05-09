@@ -1,0 +1,125 @@
+
+
+/*------------ Main Menu ------------*/
+.mainmenu {
+    /*background: url("/image/menu.jpg");*/
+    background-size: cover;
+    opacity:1;
+    float: left;
+    padding:0;
+    list-style-type:none;
+    left: 0;
+    top:0;
+    cursor:pointer;
+    height: 100%;
+    width: 13%;
+    position:fixed;bottom:0;
+    margin-top: 0;
+    color:white;
+    background-color: #2A2A36;
+
+}
+
+
+.mainmenu > li {
+    height: 32px;
+    width: 190px;
+    box-sizing: border-box;
+    position:relative;
+    list-style-type:none;
+}
+
+.mainmenu > li > a {
+    color: white;
+    text-decoration: none;
+}
+
+.mainmenu > li:first-child {
+    margin-top: 100px;
+}
+.mainmenu > li:last-child {
+    border-radius: 0 0 7px 7px;
+    list-style-type:none;
+}
+
+.mainmenu > li span {
+    display:block;
+    line-height: 32px;
+    list-style-type:none;
+}
+
+.menu-name
+{
+    text-align: left;
+}
+
+.mainmenu > li .messages {
+    background: limegreen;
+    padding: 0;
+    margin-top: -33px;
+    margin-right: 10px;
+    float: right;
+    display: block;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    font-size: 11px;
+    line-height: 19px;
+    list-style-type: none;
+    border-radius: 50%;
+
+}
+
+/*------------ Sub Menu ------------*/
+.submenu {
+    box-sizing: border-box;
+
+    font-size: 13px;
+    content: " ";
+    list-style-type:none;
+    /*opacity: 0.5;*/
+}
+
+
+.submenu li {
+    line-height: 20px;
+    height: 20px;
+    padding-top: 5px;
+    list-style-type:none;
+    width: 100%;
+    margin-left: -30px;
+    /*border: 1px solid lightblue;*/
+    transition: border-left 220ms ease-in;
+}
+.submenu > li > a {
+
+    text-decoration: none;
+    color:white;
+}
+
+.submenu .chosen,
+
+
+.submenu li:hover {
+    border-left: 4px solid  #C0C0C0;
+    list-style-type:none;
+}
+
+.submenu li span {
+    margin-left:30px;
+    list-style-type:none;
+}
+
+.animate {
+    animation: flip 2000ms ease-in-out alternate;
+}
+
+.expand-triangle li a span {
+    text-align: center;
+}
+
+@keyframes flip {
+    to {
+        transform: rotateY(360deg);
+    }
+}

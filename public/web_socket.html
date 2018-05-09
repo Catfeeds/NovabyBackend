@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+<body>
+
+    <div id="app">
+        <ol>
+            <li v-for="info in chats">
+                {{ info.msg }}
+            </li>
+        </ol>
+
+        <div>
+            <select v-model="to_user_id">
+                <option disabled value="">请选择</option>
+                <!-- <option value='10000'>wu nan</option> -->
+                <option value='12434'>Michael</option>
+            </select>
+
+            <span>To: {{ to_user_id }}</span>
+        </div>
+
+
+        <label>
+            <input v-model="message">
+        </label>
+
+        <button v-on:click="sendMsg" type="button">发送</button>
+
+        <label>
+            <span>{{ from_user_id }}</span>
+        </label>
+    </div>
+
+    <script type="text/javascript">
+        // var socket = new WebSocket("ws://test.novaby.com:9501");
+        var socket = new WebSocket("ws://localhost:9501");
+
+        socket.onopen = function(event) {
+            // 发送一个初始化消息
+            var register_info = {
+                cmd : 'register',
+                // token : 'adf32bc144d8e953f45219c0f7302799',
+                // token : '411ab27f943c1a5093b5ef1b42836848',
+                token:'123456'
+            };
+
+            socket.send(JSON.stringify(register_info));
+
+            // 监听消息
+            socket.onmessage = function(event) {
+                console.log('Client received a message', event);
+
+                try {
+                    var result = JSON.parse(event.data);
+
+                    // 注册 socket 返回
+                    if (result.cmd == 'register_response') {
+                        if (result.status == 'success') {
+                            app.from_user_id = result.register_user_id;
+                            console.log('web_socket register success');
+                        }
+                    }
+                    // 发送消息 返回
+                    else if(result.cmd == 'send_response'){
+
+                    }
+                    // 接收消息
+                    else if (result.cmd == 'revice_message') {
+                        app.chats.push({msg:result.message});
+                    }
+
+                    console.log(result);
+                }
+                catch(err){
+                    console.log(err);
+                }
+
+                // console.log(result);
+            };
+
+            // 监听Socket的关闭
+            socket.onclose = function(event) {
+                console.log('Client notified socket has closed',event);
+            };
+        };
+
+        var app = new Vue({
+            el: '#app',
+            data: {
+                chats: [
+                    // { msg: '学习 JavaScript' },
+                    // { msg: '学习 Vue' },
+                    // { msg: '整个牛项目' }
+                ],
+                message : '',
+                from_user_id : 0,
+                to_user_id: '10000',
+            },
+            methods: {
+                sendMsg: function () {
+                    var msg = this.message;
+                    var info = {msg:msg};
+                    this.chats.push(info);
+                    this.message = '';
+
+                    var json = {
+                        cmd : 'send_message',
+                        project_id : 2,
+                        from_user_id : this.from_user_id,
+                        to_user_id : this.to_user_id,
+                        message : msg
+                    };
+
+                    var jsonStr = JSON.stringify(json);
+                    // console.log(jsonStr);
+                    socket.send(jsonStr);
+                    // console.log(msg);
+                }
+            }
+        })
+
+
+
+    </script>
+</body>
+</html>
